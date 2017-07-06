@@ -1,0 +1,144 @@
+{
+    "result": [
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2ab9ed"
+            },
+            "number": 10009,
+            "name": "\u0410a"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2ab9b0"
+            },
+            "number": 10007,
+            "name": "\u0410b"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2ab9e0"
+            },
+            "number": 10005,
+            "name": "\u0410d"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abc28"
+            },
+            "number": 10002,
+            "name": "\u0410e"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2aba9f"
+            },
+            "number": 10005,
+            "name": "\u0410h"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abb8b"
+            },
+            "number": 10003,
+            "name": "\u0410l"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abb9e"
+            },
+            "number": 10001,
+            "name": "\u0410m"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abb83"
+            },
+            "number": 10003,
+            "name": "\u0410q"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2ab9dd"
+            },
+            "number": 10001,
+            "name": "\u0410s"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abadb"
+            },
+            "number": 10007,
+            "name": "\u0410v"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abbc0"
+            },
+            "number": 10007,
+            "name": "\u0410v"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abcbb"
+            },
+            "number": 10009,
+            "name": "\u0410v"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abcf3"
+            },
+            "number": 10009,
+            "name": "\u0410v"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abce6"
+            },
+            "number": 10004,
+            "name": "\u0410w"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abd24"
+            },
+            "number": 10004,
+            "name": "\u0410x"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abab7"
+            },
+            "number": 10006,
+            "name": "\u0410y"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abcd4"
+            },
+            "number": 10004,
+            "name": "\u0410y"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abce8"
+            },
+            "number": 10001,
+            "name": "\u0410\u0410"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2ab9fc"
+            },
+            "number": 10004,
+            "name": "\u0410\u0414"
+        },
+        {
+            "_id": {
+                "$oid": "595dff59ed1bd94ebe2abc7f"
+            },
+            "number": 10002,
+            "name": "\u0410\u0417"
+        }
+    ]
+}

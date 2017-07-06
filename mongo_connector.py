@@ -6,7 +6,9 @@
 import datetime
 import random
 
+from bson import json_util
 from pymongo import MongoClient
+from bson.json_util import dumps
 
 DATABASE = "timofey-db"
 COLLECTION = 'first-collection'
@@ -69,8 +71,14 @@ def main():
                          "number": {"$gt": selectors_range[0], "$lt": selectors_range[1]},
                          })
     # posts = fetch_all(collection)
+    result = {"result": []}
     for post in posts:
         print(post)
+        result["result"].append(post)
+    import json
+    page_sanitized = json.loads(json_util.dumps(result))
+    with open('result_filtered.json', 'w') as fp:
+        json.dump(page_sanitized, fp, indent=4)
 
 
 if __name__ == '__main__':

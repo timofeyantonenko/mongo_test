@@ -5,17 +5,18 @@
 """
 import datetime
 import random
+import json
 
 from bson import json_util
 from pymongo import MongoClient
 from bson.json_util import dumps
 
 DATABASE = "timofey-db"
-COLLECTION = 'first-collection'
+COLLECTION = 'Orders'
 
 random_chars = "abcdefghijklmopqrstuvwxyzАБВГДЕЖЗ"
 
-selectors_range = [10000, 10010]
+selectors_range = [10300, 10510]
 selector_first_letter = "А"
 
 
@@ -65,20 +66,18 @@ def main():
     client = MongoClient('localhost', 27017)
     db = client[DATABASE]
     collection = db[COLLECTION]
-    collection.create_index("name")
-    posts = make_select(collection,
-                        {"name": {"$regex": "А."},
-                         "number": {"$gt": selectors_range[0], "$lt": selectors_range[1]},
-                         })
-    # posts = fetch_all(collection)
+    # posts = make_select(collection,
+    #                     {
+    #                         "Описание": {"$regex": "А."},
+    #                         "КодЗаказа": {"$gt": selectors_range[0], "$lt": selectors_range[1]},
+    #                     })
+    posts = fetch_all(collection)
     result = {"result": []}
     for post in posts:
-        print(post)
         result["result"].append(post)
-    import json
     page_sanitized = json.loads(json_util.dumps(result))
-    with open('result_filtered.json', 'w') as fp:
-        json.dump(page_sanitized, fp, indent=4)
+    with open('result.json', 'w') as fp:
+        json.dump(page_sanitized, fp, indent=4, ensure_ascii=False)
 
 
 if __name__ == '__main__':
